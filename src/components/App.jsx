@@ -5,16 +5,22 @@ import React from "react";
 import Header from "./Header";
 import Note from "./Note";
 import Footer from "./Footer";
-
+//----------------------------------------------------------------------
+//Import Notes Object array to be used in App.jsx
+import notes from "../notes";
+//----------------------------------------------------------------------
 function App() {
   return (
     <div>
       <Header />
-      <Note />
+      {notes.map((note) => (
+        <Note key={note.key} title={note.title} content={note.content} />
+      ))}
       <Footer />
     </div>
   );
 }
-
+//-----------------------------------------------------------------------
 //Export App function to be used by index.js
 export default App;
+//-----------------------------------------------------------------------

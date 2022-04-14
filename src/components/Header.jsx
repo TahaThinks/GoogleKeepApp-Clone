@@ -1,5 +1,6 @@
 //Import React foe jsx manipulation
 import React from "react";
+//-----------------------------------------------------------------------
 
 function Header() {
   return (
@@ -8,5 +9,7 @@ function Header() {
     </header>
   );
 }
-
+//-----------------------------------------------------------------------
+//Export the Footer Function to be used as a component for App.jsx
 export default Header;
+//-----------------------------------------------------------------------
